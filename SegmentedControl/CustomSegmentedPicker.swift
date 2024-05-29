@@ -47,7 +47,7 @@ struct CustomSegmentedPicker: View {
                             }
                     }
                 }
-                .background {
+                .background (alignment: .leading) {
                     Capsule()
                         .fill(selectedItemColor)
                         .frame(width: self.frames[self.selection].width, height: 54)

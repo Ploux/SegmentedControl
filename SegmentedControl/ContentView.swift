@@ -10,9 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            CustomSegmentedPicker(titles: ["mon", "tue,", "wed", "thu"], selectedItemColor: .indigo, backgroundColor: .clear, selectedItemFontColor: .white, defaultItemFontColor: .black)
+            ScrollView (.horizontal, showsIndicators: false) {
+                CustomSegmentedPicker(titles: ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], selectedItemColor: .indigo, backgroundColor: .teal.opacity(0.2), selectedItemFontColor: .white, defaultItemFontColor: .gray)
+            }
         }
-        
     }
 }
 
