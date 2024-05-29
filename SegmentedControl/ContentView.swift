@@ -10,12 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            CustomSegmentedPicker(titles: ["mon", "tue,", "wed", "thu"], selectedItemColor: .indigo, backgroundColor: .clear, selectedItemFontColor: .white, defaultItemFontColor: .black)
         }
-        .padding()
+        
     }
 }
 
